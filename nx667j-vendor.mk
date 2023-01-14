@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nubia/nx667j
 
 PRODUCT_COPY_FILES += \
-    vendor/nubia/nx667j/proprietary/system/etc/sysconfig/aptxals-hiddenapi-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/aptxals-hiddenapi-whitelist.xml \
     vendor/nubia/nx667j/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/nubia/nx667j/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/nubia/nx667j/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
@@ -1402,7 +1401,6 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.radio@1.0.so
 
 PRODUCT_PACKAGES += \
-    aptxals \
     AlipayService \
     CACertService \
     CneApp \

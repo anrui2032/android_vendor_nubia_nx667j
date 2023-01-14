@@ -6,16 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "aptxals",
-	owner: "nubia",
-	apk: "proprietary/system/app/aptxals/aptxals.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "AlipayService",
 	owner: "nubia",
 	apk: "proprietary/system/priv-app/AlipayService/AlipayService.apk",
