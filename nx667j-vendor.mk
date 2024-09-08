@@ -479,14 +479,6 @@ PRODUCT_PACKAGES += \
     vulkan.adreno \
     libC2D2 \
     libCB \
-    libOmxAlacDec \
-    libOmxAmrDec \
-    libOmxAmrwbplusDec \
-    libOmxApeDec \
-    libOmxEvrcDec \
-    libOmxG711Dec \
-    libOmxQcelp13Dec \
-    libOmxWmaDec \
     libOpenCL \
     libVkLayer_q3dtools \
     lib_lvacfs \
@@ -586,11 +578,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
-    libOmxDsdDec \
     libadm \
     libadpcmdec \
     libdrc \
-    libdsd2pcm \
     libsmwrapper \
     libsurround_3mic_proc \
     com.zte.eeprom.gt24p64b_imx686 \
