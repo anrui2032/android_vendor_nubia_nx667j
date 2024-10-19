@@ -572,8 +572,6 @@ PRODUCT_PACKAGES += \
     libssrec \
     libstagefright_soft_qtiflacdec \
     libthermalclient \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
     libasphere \
     libdtsaudio \
     libqcbassboost \
@@ -1278,3 +1276,7 @@ PRODUCT_PACKAGES += \
     vppservice \
     xtra-daemon \
     dpmd
+
+PRODUCT_PACKAGES += \
+    libsns_device_mode_skel_libsns_device_mode_skel_symlink64 \
+    libsns_low_lat_stream_skel_libsns_low_lat_stream_skel_symlink64
