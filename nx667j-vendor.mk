@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/nubia/nx667j/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
     vendor/nubia/nx667j/proprietary/vendor/bin/battery_record_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/battery_record_daemon \
+    vendor/nubia/nx667j/proprietary/vendor/bin/camerahalvs:$(TARGET_COPY_OUT_VENDOR)/bin/camerahalvs \
     vendor/nubia/nx667j/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/nubia/nx667j/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/nubia/nx667j/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
@@ -76,6 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.zte.hardware.laser@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zte.hardware.laser@1.0-service \
     vendor/nubia/nx667j/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/nubia/nx667j/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
     vendor/nubia/nx667j/proprietary/vendor/bin/init.kernel.post_boot-lahaina.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.kernel.post_boot-lahaina.sh \
@@ -144,8 +146,18 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/nubia/nx667j/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd \
     vendor/nubia/nx667j/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/VfbTuningInterface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/VfbTuningInterface.xml \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify0.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify0.json \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify1.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify1.json \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/beautiful_app/preference_beautify2.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_app/preference_beautify2.json \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/beautiful_fn/fn_default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beautiful_fn/fn_default.xml \
     vendor/nubia/nx667j/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/dualcam_cali_arcsoft_02.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_cali_arcsoft_02.bin \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/dualcam_cali_arcsoft_30.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/dualcam_cali_arcsoft_30.bin \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/remosaic_cali_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/remosaic_cali_ov16a1q.bin \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/remosaic_cali_s5kgw3sp13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/remosaic_cali_s5kgw3sp13.bin \
     vendor/nubia/nx667j/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/nubia/nx667j/proprietary/vendor/etc/camera/widelencalc_cali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/widelencalc_cali.bin \
     vendor/nubia/nx667j/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
     vendor/nubia/nx667j/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/nubia/nx667j/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -264,6 +276,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
+    vendor/nubia/nx667j/proprietary/vendor/etc/init/camerahalvs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalvs.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
@@ -322,6 +335,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.zte.hardware.laser@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.zte.hardware.laser@1.0-service.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/izat.conf:$(TARGET_COPY_OUT_VENDOR)/etc/izat.conf \
@@ -520,6 +534,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/nubia/nx667j/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/nubia/nx667j/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/nubia/nx667j/proprietary/vendor/firmware/ois_bu63169.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_bu63169.coeff \
+    vendor/nubia/nx667j/proprietary/vendor/firmware/ois_bu63169.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_bu63169.prog \
     vendor/nubia/nx667j/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/nubia/nx667j/proprietary/vendor/firmware/vpu20_4v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b00 \
     vendor/nubia/nx667j/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
@@ -710,6 +726,24 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.voiceprint@1.0.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.eeprom.gt24p64b_imx686.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.eeprom.gt24p64b_imx686.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.eeprom.ov08a10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.eeprom.ov08a10.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.eeprom.ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.eeprom.ov16a1q.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.eeprom.s5kgw3sp13.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.eeprom.s5kgw3sp13.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensor.imx686.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensor.imx686.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensor.ov08a10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensor.ov08a10.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensor.ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensor.ov16a1q.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensor.s5kgw3sp13.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensor.s5kgw3sp13.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensormodule.sunny_imx686.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.sunny_imx686.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensormodule.sunny_ov08a10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.sunny_ov08a10.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensormodule.sunny_s5kgw3sp13p.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.sunny_s5kgw3sp13p.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensormodule.sunny_s5kgw3sp13u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.sunny_s5kgw3sp13u.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.sensormodule.zte_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.sensormodule.zte_ov16a1q.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.tuned.sunny_imx686.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.tuned.sunny_imx686.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.tuned.sunny_ov08a10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.tuned.sunny_ov08a10.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.tuned.sunny_s5kgw3sp13p.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.tuned.sunny_s5kgw3sp13p.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.tuned.sunny_s5kgw3sp13u.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.tuned.sunny_s5kgw3sp13u.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/com.zte.tuned.zte_ov16a1q.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.zte.tuned.zte_ov16a1q.bin \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
@@ -758,13 +792,25 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.vidhance.node.ica.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.ica.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.vidhance.node.processing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.processing.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.capturebokeh.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.capturepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.capturepostprocess.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.hdr.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.mcxrealtimepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.mcxrealtimepostprocess.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimebokeh.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimeparse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimeparse.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.realtimepostprocess.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.realtimepostprocess.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.remosaic.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.superiq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.superiq.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/com.zte.node.supres.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.zte.node.supres.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/components/libdepthmapwrapper_secure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper_secure.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
     vendor/nubia/nx667j/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/com.arcsoft.feature2.swmfsr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.arcsoft.feature2.swmfsr.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
@@ -827,6 +873,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/hw/fingerprint.lahaina.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.lahaina.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/hw/sensors.hal.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.hal.tof.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
@@ -858,12 +905,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libFNVfbEngineHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFNVfbEngineHAL.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libMpeghSwEnc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeghSwEnc.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libNubiaImageAlgorithmVD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libNubiaImageAlgorithmVD.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAacDec.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDec.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxAlacDecSw.so \
@@ -887,6 +936,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libTrustedUITZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUITZ.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libTrustedUIVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedUIVM.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libZEffectLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libZEffectLib.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/lib_lvacfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_lvacfs.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liba2dpoffload.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
@@ -901,6 +951,12 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_image.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_image.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_video.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_hdr_detection.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_mf_superresolution.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_mf_superresolution.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libarcsoft_pdc_p.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_pdc_p.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libasn1cper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1cper.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libasn1crt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crt.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libasn1crtx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libasn1crtx.so \
@@ -922,17 +978,26 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxeffect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxeffect.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxhdrautodetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxhdrautodetect.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxifestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxifestriping.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamximageformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamximageformatutils.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxmirror.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxmirror.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxportraitbokehwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxportraitbokehwrap.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxqsatalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxqsatalgo.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxselfiebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxselfiebokeh.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxskinbeautiful.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxskinbeautiful.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxskinenhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxskinenhance.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxswispiqmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswispiqmodule.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxwatermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxwatermark.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcamxwidelencalc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxwidelencalc.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcapiv2svarnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svarnn.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
@@ -941,10 +1006,13 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libchilog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchilog.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libchvs-bc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchvs-bc.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libchvs-util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchvs-util.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libcom.nubia.chinodenubiautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.nubia.chinodenubiautils.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libcomprcapture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcomprcapture.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
@@ -966,9 +1034,11 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libdts-eagle-shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdts-eagle-shared.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libdtsdsec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtsdsec.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libeepromutil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeepromutil.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexthwplugin.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libfnxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfnxml.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
@@ -1020,6 +1090,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/liblvacfs_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblvacfs_wrapper.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libmcxcroputil.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmcxcroputil.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libmemperfd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmemperfd.so \
@@ -1109,6 +1180,10 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libremosaic_ov16a1q.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_ov16a1q.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libremosaic_s5kgw3sp13.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_s5kgw3sp13.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
@@ -1132,6 +1207,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libskewknob.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskewknob.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libskia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskia.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libskia_watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libskia_watermark.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsnapdragoncolor-manager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-manager.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsnapdragoncolor-qdcm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor-qdcm.so \
@@ -1308,6 +1385,8 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.laser@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.laser@1.0-impl.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.laser@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.laser@1.0.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.radio@1.0.so
 
 PRODUCT_PACKAGES += \
@@ -1331,4 +1410,5 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     vendor.qti.diag.hal.service \
     vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.servicetracker@1.2-service
+    vendor.qti.hardware.servicetracker@1.2-service \
+    vendor.zte.hardware.laser@1.0-service
