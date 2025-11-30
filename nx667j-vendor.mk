@@ -536,6 +536,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
     vendor/nubia/nx667j/proprietary/vendor/firmware/ois_bu63169.coeff:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_bu63169.coeff \
     vendor/nubia/nx667j/proprietary/vendor/firmware/ois_bu63169.prog:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_bu63169.prog \
+    vendor/nubia/nx667j/proprietary/vendor/firmware/stereo.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/stereo.cnt \
     vendor/nubia/nx667j/proprietary/vendor/firmware/tfa98xx.cnt:$(TARGET_COPY_OUT_VENDOR)/firmware/tfa98xx.cnt \
     vendor/nubia/nx667j/proprietary/vendor/firmware/vpu20_4v.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b00 \
     vendor/nubia/nx667j/proprietary/vendor/firmware/vpu20_4v.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b01 \
