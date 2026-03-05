@@ -1,0 +1,12 @@
+enableNCSService=TRUE
+multiCameraEnable=TRUE
+multiCameraFrameSyncMask=3
+multiCameraFPSMatchMask=3
+multiCameraHWSyncMask=0
+enableTOFInterface=TRUE
+customTOFSensorLib=/vendor/lib64/hw/sensors.hal.tof.so
+enablePTDetection=TRUE
+outputFormat=OutputFormatYUV420NV12
+enableParallelPipelineDeactivate=false
+disableFocusIndication=1
+FDClient=FDSWOnly
