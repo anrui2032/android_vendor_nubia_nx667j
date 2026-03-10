@@ -78,6 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.zte.fingerprint.ifaahidl@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zte.fingerprint.ifaahidl@1.0-service \
     vendor/nubia/nx667j/proprietary/vendor/bin/hw/vendor.zte.hardware.laser@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.zte.hardware.laser@1.0-service \
     vendor/nubia/nx667j/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/nubia/nx667j/proprietary/vendor/bin/imsdaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdaemon \
@@ -338,6 +339,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.zte.fingerprint.ifaahidl@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.zte.fingerprint.ifaahidl@1.0-service.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vendor.zte.hardware.laser@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.zte.hardware.laser@1.0-service.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/nubia/nx667j/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
@@ -1243,6 +1245,7 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsynx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynx.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/libteec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteec.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/libthreadutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthreadutils.so \
@@ -1393,12 +1396,14 @@ PRODUCT_COPY_FILES += \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0-impl.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.qspmhal@1.0.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.voiceprint@1.0.so \
+    vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.fingerprint.ifaahidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.fingerprint.ifaahidl@1.0.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.laser@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.laser@1.0-impl.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.laser@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.laser@1.0.so \
     vendor/nubia/nx667j/proprietary/vendor/lib64/vendor.zte.hardware.radio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.zte.hardware.radio@1.0.so
 
 PRODUCT_PACKAGES += \
     aptxals \
+    AlipayService \
     CACertService \
     CneApp \
     IWlanService \
