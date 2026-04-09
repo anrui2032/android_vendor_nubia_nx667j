@@ -540,7 +540,7 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     liblvacfs_wrapper \
-    libmmosal \
+    libmmosal-vendor \
     libmulawdec \
     libomx-dts \
     libperfconfig \
