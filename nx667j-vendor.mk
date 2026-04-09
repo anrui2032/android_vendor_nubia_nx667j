@@ -520,11 +520,14 @@ PRODUCT_PACKAGES += \
     libcapiv2svacnn \
     libcapiv2svarnn \
     libcapiv2vop \
+    libcdsprpc \
     libcomprcapture \
     libdiag \
+    libdsutils \
     libdts-eagle-shared \
     libdtsdsec \
     libexthwplugin \
+    libfastcvdsp_stub \
     libfastcvopt \
     libgcs-calwrapper \
     libgcs-ipc \
@@ -540,6 +543,7 @@ PRODUCT_PACKAGES += \
     libllvm-glnext \
     libllvm-qcom \
     liblvacfs_wrapper \
+    libmdmdetect \
     libmmosal-vendor \
     libmulawdec \
     libomx-dts \
@@ -580,6 +584,7 @@ PRODUCT_PACKAGES += \
     libshoebox \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.iop@1.0 \
     vendor.qti.hardware.iop@2.0 \
@@ -587,6 +592,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@2.0 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
+    vendor.qti.qspmhal@1.0 \
     vendor.qti.voiceprint@1.0 \
     libOmxDsdDec \
     libOmxMpeghDecSw \
@@ -759,6 +765,7 @@ PRODUCT_PACKAGES += \
     libadsp_default_listener \
     libadsprpc \
     libaidenoiser \
+    libapp-framework \
     libappclassifier \
     libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus_image \
@@ -799,7 +806,6 @@ PRODUCT_PACKAGES += \
     libcdfw \
     libcdfw_remote_api \
     libcdsp_default_listener \
-    libcdsprpc \
     libchilog \
     libchvs-bc \
     libchvs-util \
@@ -824,10 +830,10 @@ PRODUCT_PACKAGES += \
     libdrmfs \
     libdrmtime \
     libdsi_netctrl \
-    libdsutils \
     libeepromutil \
-    libfastcvdsp_stub \
+    libfcell \
     libfnxml \
+    libframework \
     libgameoptfeature \
     libgarden \
     libgarden_haltests_e2e \
@@ -843,6 +849,8 @@ PRODUCT_PACKAGES += \
     libhdcpsrm \
     libhdr_stub \
     libhdr_tm \
+    libimage_segment \
+    libimage_split \
     libipebpsstriping \
     libizat_client_api \
     libizat_core \
@@ -866,7 +874,6 @@ PRODUCT_PACKAGES += \
     liblqe \
     libmctfengine_stub \
     libmcxcroputil \
-    libmdmdetect \
     libmdsprpc \
     libmemperfd \
     libmeters-ns \
@@ -901,6 +908,7 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
+    libportrait_bokeh \
     libpowercore \
     libqcbor \
     libqcc_file_agent \
@@ -955,7 +963,7 @@ PRODUCT_PACKAGES += \
     libsensorslog \
     libsi \
     libskewknob \
-    libskia \
+    libskia-vendor \
     libskia_watermark \
     libslimclient \
     libsnapdragoncolor-manager \
@@ -972,6 +980,8 @@ PRODUCT_PACKAGES += \
     libspcom \
     libspl \
     libsplh \
+    libss-plugin \
+    libss-util \
     libssc \
     libssc_default_listener \
     libssd \
@@ -981,6 +991,8 @@ PRODUCT_PACKAGES += \
     libsysmon_cdsp_skel \
     libsystem_health_mon \
     libteec \
+    libtensorflowlite \
+    libtensorflowlite_gpu_delegate \
     libtfestriping \
     libthreadutils \
     libtime_genoff \
@@ -1049,7 +1061,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.data.latency@1.0 \
     vendor.qti.hardware.data.lce@1.0 \
     vendor.qti.hardware.data.qmi@1.0 \
-    vendor.qti.hardware.dsp@1.0 \
     vendor.qti.hardware.eid@1.0 \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
@@ -1111,7 +1122,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
     vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0 \
     vendor.zte.fingerprint.ifaahidl@1.0 \
     vendor.zte.hardware.laser@1.0-impl \
     vendor.zte.hardware.laser@1.0 \
