@@ -26075,7 +26075,7 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "libhidltransport",
                 "libpowercore",
-                "libtinyxml2",
+                "libtinyxml2-v34",
                 "vendor.qti.hardware.perf@2.1",
                 "libc++",
                 "libc",
